@@ -1,4 +1,5 @@
 from django.db import models
+<<<<<<< HEAD
 from django.contrib.auth.models import User
 
 # Create your models here.
@@ -21,3 +22,8 @@ class Product(models.Model):
     
     def __str__(self):
         return self.title
+=======
+
+# Create your models here.
+# class Vendor(models.model):
+>>>>>>> 417a2fac13ce5b2a5b22a2825cc31974a06d9578

@@ -77,9 +77,9 @@ WSGI_APPLICATION = 'backend_api.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
+        'ENGINE' : 'django.db.backends.postgresql',
         'NAME' : 'multivendor_ecommerce',
-        'USER' : 'postgres',
+        'USRE' : 'postgres',
         'PASSWORD' : '2003',
         'HOST' : 'localhost',
         'PORT': '5432',
