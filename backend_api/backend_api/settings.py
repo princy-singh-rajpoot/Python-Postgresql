@@ -31,6 +31,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'main',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -77,9 +78,9 @@ WSGI_APPLICATION = 'backend_api.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE' : 'django.db.backends.postgresql',
-        'NAME' : 'multivendor-ecommerce',
+        'NAME' : 'multivendor_ecommerce',
         'USRE' : 'postgres',
-        'PASSWORD' : 'root',
+        'PASSWORD' : '2003',
         'HOST' : 'localhost',
     }
 }
