@@ -4,4 +4,4 @@ from . import models
 class VendorSerializer(serializers.ModelSerializer):
     class Meta:
         model = models.Vendor
-        # fiels = 
+        fiels = ['user','address']
