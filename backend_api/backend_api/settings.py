@@ -79,7 +79,7 @@ DATABASES = {
     'default': {
         'ENGINE' : 'django.db.backends.postgresql',
         'NAME' : 'multivendor_ecommerce',
-        'USRE' : 'postgres',
+        'USER' : 'postgres',
         'PASSWORD' : '2003',
         'HOST' : 'localhost',
         'PORT': '5432',
