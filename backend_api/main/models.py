@@ -26,7 +26,7 @@ class Product(models.Model):
     def __str__(self):
         return self.title
     
-    # cutomer model
+# cutomer model
 class Customer(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE)
     mobile = models.PositiveBigIntegerField()
@@ -35,14 +35,14 @@ class Customer(models.Model):
         return self.user.username
 
 class Order(models.Model):
-    customer = models.ForeignKey(Customer, on_delete=models.CASCADE)
+    customer = models.ForeignKey(Customer, on_delete=models.CASCADE,related_name='customer_orders')
     order_time = models.DateTimeField(auto_now_add=True)
     
-    # def __str__(self):
-    #     return self.
+    def __unicode__(self):
+        return '%s' % (self.order_time)
     
 class OrderItems(models.Model):
-    customer = models.ForeignKey(Customer, on_delete=models.CASCADE, related_name='order_items')
+    customer = models.ForeignKey(Order, on_delete=models.CASCADE, related_name='order_items')
     product = models.ForeignKey(Product, on_delete=models.CASCADE)
     
     def __str__(self):
