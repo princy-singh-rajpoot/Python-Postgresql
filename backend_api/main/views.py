@@ -18,3 +18,13 @@ class ProductList(generics.ListCreateAPIView):
 class ProductDetail(generics.RetrieveUpdateDestroyAPIView): 
     queryset = models.Product.objects.all()
     serializer_class = serializers.ProductDetailSerializer
+    
+# customer
+# Create your views here.
+class CustomerList(generics.ListCreateAPIView):
+    queryset = models.Customer.objects.all()
+    serializer_class = serializers.CustomerSerializer
+    
+class CustomerDetail(generics.RetrieveUpdateDestroyAPIView):
+    queryset = models.Customer.objects.all()
+    serializer_class = serializers.VendorDetailSerializer
