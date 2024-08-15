@@ -3,4 +3,7 @@ from . import models
 
 # Register your models here.
 admin.site.register(models.Vendor)
-admin.register(models.Vendor)
+admin.site.register(models.ProductCategory)
+admin.site.register(models.Product)
+
+admin.site.register(models.Customer)
