@@ -19,4 +19,4 @@ urlpatterns = [
     path('order-detail/<int:pk>/',views.OrderDetail.as_view()),
 ]
 
-urlpatterns+=router
+urlpatterns+=router.urls
