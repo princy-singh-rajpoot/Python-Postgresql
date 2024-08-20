@@ -34,7 +34,7 @@ class OrderList(generics.ListCreateAPIView):
     queryset = models.Order.objects.all()
     serializer_class = serializers.OrderSerializer
     
-class OrderDetail(generics.LisAPIView):
+class OrderDetail(generics.ListAPIView):
     # queryset = models.OrderItems.objects.all()
     serializer_class = serializers.OrderDetailSerializer
     
