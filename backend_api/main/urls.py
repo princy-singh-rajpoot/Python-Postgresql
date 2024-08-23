@@ -21,7 +21,7 @@ urlpatterns = [
     path('customer/<int:pk>/',views.CustomerDetail.as_view()),
     # orders
     path('orders/',views.OrderList.as_view()),
-    path('order-detail/<int:pk>/',views.OrderDetail.as_view()),
+    path('order/<int:pk>/',views.OrderDetail.as_view()),
 ]
 
 urlpatterns+=router.urls
