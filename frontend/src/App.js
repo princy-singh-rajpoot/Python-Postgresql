@@ -10,7 +10,7 @@ function App() {
       <main className='mt-4'> 
         <div className='container'>
 
-          {/* start latesssssssssssssssssssssssssssssssssssssssst product */}
+          {/* start latest product */}
             <div className='d-flex justify-content-between align-items-center mb-4'> 
               <h3 className='mb-0'>Latest Products</h3>
               <a href='#' className='float-end btn btn-sm btn-dark'>View All Products <i class="fa-solid fa-arrow-right-long"></i> </a>
@@ -188,7 +188,7 @@ function App() {
               </div>
               {/* product box ended 8*/}
             </div>
-          {/* end of latesssssssssssssssssssssssssssssssssssssssst product */}
+          {/* end of latest product */}
 
           {/* start popularrr categoriesssssssss */}
             <div className='d-flex justify-content-between align-items-center mb-4'> 
@@ -197,65 +197,7 @@ function App() {
             </div>
             <div className='row mb-4'>
 
-              {/* categories box 1*/}
-              <div className='col-12 col-md-3 mb-3'>
-                <div className="card">
-                  <img src={logo} className="card-img-top" alt="..."/>
-                  <div className="card-body">
-                    <h4 className="card-title">Category title</h4>
-                  </div>             
-                  <div className='card-footer'>
-                  Product Downloads : 2331
-                  </div>   
-                </div>
-              </div>
-              {/* categories box ended 1*/}
-
-              
-              {/* categories box 2*/}
-              <div className='col-12 col-md-3 mb-3'>
-                <div className="card">
-                  <img src={logo} className="card-img-top" alt="..."/>
-                  <div className="card-body">
-                    <h4 className="card-title">Category title</h4>
-                  </div>             
-                  <div className='card-footer'>
-                  Product Downloads : 2331
-                  </div>   
-                </div>
-              </div>
-              {/* categories box ended 2*/}
-              
-              {/* categories box 3*/}
-              <div className='col-12 col-md-3 mb-3'>
-                <div className="card">
-                  <img src={logo} className="card-img-top" alt="..."/>
-                  <div className="card-body">
-                    <h4 className="card-title">Category title</h4>
-                  </div>             
-                  <div className='card-footer'>
-                  Product Downloads : 2331
-                  </div>   
-                </div>
-              </div>
-              {/* categories box ended 3*/}
-
-              
-              {/* categories box 4*/}
-              <div className='col-12 col-md-3 mb-3'>
-                <div className="card">
-                  <img src={logo} className="card-img-top" alt="..."/>
-                  <div className="card-body">
-                    <h4 className="card-title">Category title</h4>
-                  </div>             
-                  <div className='card-footer'>
-                  Product Downloads : 2331
-                  </div>   
-                </div>
-              </div>
-              {/* categories box ended 4*/}
-
-              {/* categories box 5*/}
+            {/* categories box 5*/}
               <div className='col-12 col-md-3 mb-3'>
                 <div className="card">
                   <img src={logo} className="card-img-top" alt="..."/>
