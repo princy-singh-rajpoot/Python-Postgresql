@@ -27,6 +27,7 @@ function App() {
             <a href='#' className='btn btn-primary'>View All Products</a>
           </div>
           <div className='row'>
+
             {/* product box 1*/}
             <div className='col-12 col-md-3 mb-3'>
               <div className="card">
@@ -48,10 +49,70 @@ function App() {
             </div>
             {/* product box ended 1*/}
 
-            {/* product box 2 */}
-            {/* ... similar structure for other product boxes ... */}
+            {/* product box 2*/}
+            <div className='col-12 col-md-3 mb-3'>
+              <div className="card">
+                <img src={logo} className="card-img-top" alt="..."/>
+                <div className="card-body">
+                  <h4 className="card-title">Product title</h4>
+                  <h5 className="card-title text-muted">Price: Rs. 500</h5>
+                </div>
 
-            {/* product box 8 */}
+                <div className='card-footer'>
+                  <button title="Add to cart" className='btn btn-success btn-sm'>
+                    <i className="fa-solid fa-cart-plus"></i>
+                  </button>
+                  <button title="Add to wishlist" className='btn btn-success btn-sm ms-1'>
+                    <i className="fa fa-heart"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+            {/* product box ended 2*/}
+            
+            {/* product box 3*/}
+            <div className='col-12 col-md-3 mb-3'>
+              <div className="card">
+                <img src={logo} className="card-img-top" alt="..."/>
+                <div className="card-body">
+                  <h4 className="card-title">Product title</h4>
+                  <h5 className="card-title text-muted">Price: Rs. 500</h5>
+                </div>
+
+                <div className='card-footer'>
+                  <button title="Add to cart" className='btn btn-success btn-sm'>
+                    <i className="fa-solid fa-cart-plus"></i>
+                  </button>
+                  <button title="Add to wishlist" className='btn btn-success btn-sm ms-1'>
+                    <i className="fa fa-heart"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+            {/* product box ended 3*/}
+
+            {/* product box 4*/}
+            <div className='col-12 col-md-3 mb-3'>
+              <div className="card">
+                <img src={logo} className="card-img-top" alt="..."/>
+                <div className="card-body">
+                  <h4 className="card-title">Product title</h4>
+                  <h5 className="card-title text-muted">Price: Rs. 500</h5>
+                </div>
+
+                <div className='card-footer'>
+                  <button title="Add to cart" className='btn btn-success btn-sm'>
+                    <i className="fa-solid fa-cart-plus"></i>
+                  </button>
+                  <button title="Add to wishlist" className='btn btn-success btn-sm ms-1'>
+                    <i className="fa fa-heart"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+            {/* product box ended 4*/}
+
+            {/* product box 5*/}
             <div className='col-12 col-md-3 mb-4'>
               <div className="card">
                 <img src={logo} className="card-img-top" alt="..."/>
@@ -70,7 +131,50 @@ function App() {
                 </div>
               </div>
             </div>
-            {/* product box ended 8 */}
+            {/* product box ended 5*/}
+
+             {/* product box 6*/}
+             <div className='col-12 col-md-3 mb-4'>
+              <div className="card">
+                <img src={logo} className="card-img-top" alt="..."/>
+                <div className="card-body">
+                  <h4 className="card-title">Product title</h4>
+                  <h5 className="card-title text-muted">Price: Rs. 500</h5>
+                </div>
+
+                <div className='card-footer'>
+                  <button title="Add to cart" className='btn btn-success btn-sm'>
+                    <i className="fa-solid fa-cart-plus"></i>
+                  </button>
+                  <button title="Add to wishlist" className='btn btn-success btn-sm ms-1'>
+                    <i className="fa fa-heart"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+            {/* product box ended 6*/}
+
+             {/* product box 7*/}
+             <div className='col-12 col-md-3 mb-4'>
+              <div className="card">
+                <img src={logo} className="card-img-top" alt="..."/>
+                <div className="card-body">
+                  <h4 className="card-title">Product title</h4>
+                  <h5 className="card-title text-muted">Price: Rs. 500</h5>
+                </div>
+
+                <div className='card-footer'>
+                  <button title="Add to cart" className='btn btn-success btn-sm'>
+                    <i className="fa-solid fa-cart-plus"></i>
+                  </button>
+                  <button title="Add to wishlist" className='btn btn-success btn-sm ms-1'>
+                    <i className="fa fa-heart"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+            {/* product box ended 7*/}
+
           </div>
         </div>
       </main>
