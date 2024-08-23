@@ -104,3 +104,23 @@ class ProductRatingSerializer(serializers.ModelSerializer):
     def __init__(self, *args, **kwargs):
         super(ProductRatingSerializer, self).__init__(*args, **kwargs)
         self.Meta.depth = 1 
+        
+# Category serializer
+class CategorySerializer(serializers.ModelSerializer):
+    class Meta:
+        model = models.ProductCategory
+        fields = ['id', 'title', 'detail']
+    
+    def __init__(self, *args, **kwargs):
+        super(CategorySerializer, self).__init__(*args, **kwargs)
+        self.Meta.depth = 1            
+        
+# Category detail
+class CategoryDetailSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = models.ProductCategory
+        fields = ['id', 'title', 'detail']
+    
+    def __init__(self, *args, **kwargs):
+        super(CategoryDetailSerializer, self).__init__(*args, **kwargs)
+        # self.Meta.depth = 1  
