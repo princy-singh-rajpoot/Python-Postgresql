@@ -24,7 +24,7 @@ function App() {
         <div className='container'>
           <div className='d-flex justify-content-between align-items-center mb-4'>
             <h3 className='mb-0'>Latest Products</h3>
-            <a href='#' className='btn btn-primary'>View All Products</a>
+            <a href='#' className='float-end btn btn-sm btn-dark m-2'>View All Products <i class="fa-solid fa-arrow-right-long"></i> </a>
           </div>
           <div className='row'>
 
