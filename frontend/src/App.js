@@ -410,7 +410,7 @@ function App() {
                     <h4 className="card-title">Seller Name</h4>
                   </div>             
                   <div className='card-footer'>
-                  Categories: <a href="#"> JAVASCRIPT </a><a href="#"> WordPress </a>
+                  Categories: <a href="#"> JAVASCRIPT </a>
                   </div>   
                 </div>
               </div>
