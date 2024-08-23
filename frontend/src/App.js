@@ -24,7 +24,7 @@ function App() {
         <div className='container'>
           <div className='d-flex justify-content-between align-items-center mb-4'>
             <h3 className='mb-0'>Latest Products</h3>
-            <a href='#' className='float-end btn btn-sm btn-dark m-2'>View All Products <i class="fa-solid fa-arrow-right-long"></i> </a>
+            <a href='#' className='float-end btn btn-sm btn-dark'>View All Products <i class="fa-solid fa-arrow-right-long"></i> </a>
           </div>
           <div className='row'>
 
@@ -41,7 +41,7 @@ function App() {
                   <button title="Add to cart" className='btn btn-success btn-sm'>
                     <i className="fa-solid fa-cart-plus"></i>
                   </button>
-                  <button title="Add to wishlist" className='btn btn-success btn-sm ms-1'>
+                  <button title="Add to wishlist" className='btn btn-danger btn-sm ms-1'>
                     <i className="fa fa-heart"></i>
                   </button>
                 </div>
@@ -62,7 +62,7 @@ function App() {
                   <button title="Add to cart" className='btn btn-success btn-sm'>
                     <i className="fa-solid fa-cart-plus"></i>
                   </button>
-                  <button title="Add to wishlist" className='btn btn-success btn-sm ms-1'>
+                  <button title="Add to wishlist" className='btn btn-danger btn-sm ms-1'>
                     <i className="fa fa-heart"></i>
                   </button>
                 </div>
@@ -83,7 +83,7 @@ function App() {
                   <button title="Add to cart" className='btn btn-success btn-sm'>
                     <i className="fa-solid fa-cart-plus"></i>
                   </button>
-                  <button title="Add to wishlist" className='btn btn-success btn-sm ms-1'>
+                  <button title="Add to wishlist" className='btn btn-danger btn-sm ms-1'>
                     <i className="fa fa-heart"></i>
                   </button>
                 </div>
@@ -104,7 +104,7 @@ function App() {
                   <button title="Add to cart" className='btn btn-success btn-sm'>
                     <i className="fa-solid fa-cart-plus"></i>
                   </button>
-                  <button title="Add to wishlist" className='btn btn-success btn-sm ms-1'>
+                  <button title="Add to wishlist" className='btn btn-danger btn-sm ms-1'>
                     <i className="fa fa-heart"></i>
                   </button>
                 </div>
@@ -125,7 +125,7 @@ function App() {
                   <button title="Add to cart" className='btn btn-success btn-sm'>
                     <i className="fa-solid fa-cart-plus"></i>
                   </button>
-                  <button title="Add to wishlist" className='btn btn-success btn-sm ms-1'>
+                  <button title="Add to wishlist" className='btn btn-danger btn-sm ms-1'>
                     <i className="fa fa-heart"></i>
                   </button>
                 </div>
@@ -146,7 +146,7 @@ function App() {
                   <button title="Add to cart" className='btn btn-success btn-sm'>
                     <i className="fa-solid fa-cart-plus"></i>
                   </button>
-                  <button title="Add to wishlist" className='btn btn-success btn-sm ms-1'>
+                  <button title="Add to wishlist" className='btn btn-danger btn-sm ms-1'>
                     <i className="fa fa-heart"></i>
                   </button>
                 </div>
@@ -167,13 +167,34 @@ function App() {
                   <button title="Add to cart" className='btn btn-success btn-sm'>
                     <i className="fa-solid fa-cart-plus"></i>
                   </button>
-                  <button title="Add to wishlist" className='btn btn-success btn-sm ms-1'>
+                  <button title="Add to wishlist" className='btn btn-danger btn-sm ms-1'>
                     <i className="fa fa-heart"></i>
                   </button>
                 </div>
               </div>
             </div>
             {/* product box ended 7*/}
+
+              {/* product box 8*/}
+              <div className='col-12 col-md-3 mb-4'>
+              <div className="card">
+                <img src={logo} className="card-img-top" alt="..."/>
+                <div className="card-body">
+                  <h4 className="card-title">Product title</h4>
+                  <h5 className="card-title text-muted">Price: Rs. 500</h5>
+                </div>
+
+                <div className='card-footer'>
+                  <button title="Add to cart" className='btn btn-success btn-sm'>
+                    <i className="fa-solid fa-cart-plus"></i>
+                  </button>
+                  <button title="Add to wishlist" className='btn btn-danger btn-sm ms-1'>
+                    <i className="fa fa-heart"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+            {/* product box ended 8*/}
 
           </div>
         </div>
