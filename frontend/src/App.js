@@ -13,7 +13,7 @@ function App() {
           <div className="collapse navbar-collapse" id="navbarTogglerDemo01">
             <a className="navbar-brand" href="#">Python Market Place</a>
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-              <li className="nav-item"><a className="nav-link active" aria-current="page" href="#"> Home </a></li>
+              <li className="nav-item"><a className="nav-link" aria-current="page" href="#"> Home </a></li>
               <li className="nav-item"><a className="nav-link" href="#">Categories</a></li>
              </ul>
           </div>
