@@ -22,7 +22,7 @@ function App() {
 
     <main className='mt-4'> 
       <div className='container'>
-        <h3 className='mb-4'> Latest Products <a href='#' className='ms-auto'>
+        <h3 className='mb-4'> Latest Products <a href='#' className='float-end'>
           View All Products </a></h3>
         <div className='row'>
           {/* product box 1*/}
