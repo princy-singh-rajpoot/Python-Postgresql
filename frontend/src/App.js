@@ -367,7 +367,7 @@ function App() {
                     <h4 className="card-title">Seller Name</h4>
                   </div>             
                   <div className='card-footer'>
-                    Categories: <a href="#"> Python </a><a href="#"> PHP </a>
+                    Categories: <a href="#"> Python </a>,<a href="#"> PHP </a>
                   </div>   
                 </div>
               </div>
@@ -381,7 +381,7 @@ function App() {
                     <h4 className="card-title">Seller Name</h4>
                   </div>             
                   <div className='card-footer'>
-                  Categories: <a href="#"> VueJs </a> <a href="#"> Shopify </a>
+                  Categories: <a href="#"> VueJs </a>, <a href="#"> Shopify </a>
                   </div>   
                 </div>
               </div>
@@ -395,7 +395,7 @@ function App() {
                     <h4 className="card-title">Seller Name</h4>
                   </div>             
                   <div className='card-footer'>
-                  Categories: <a href="#">AngularJs </a> <a href="#"> ReactJs</a>
+                  Categories: <a href="#">AngularJs </a> ,<a href="#"> ReactJs</a>
                   </div>   
                 </div>
               </div>
