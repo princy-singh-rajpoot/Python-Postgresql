@@ -89,7 +89,7 @@ class OrderDetailSerializer(serializers.ModelSerializer):
 class CustomerAddressSerializer(serializers.ModelSerializer):
     class Meta:     
         model = models.CustomerAddress
-        fields = ['id', 'customer','address','default_addess']
+        fields = ['id', 'customer','address','default_address']
     
     def __init__(self, *args, **kwargs):
         super(CustomerAddressSerializer, self).__init__(*args, **kwargs)

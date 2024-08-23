@@ -1,6 +1,6 @@
-from django.shortcuts import render
 from rest_framework import generics, permissions, pagination , viewsets
 from . import serializers,models
+from django.http import Http404
 
 # vendor list
 class VendorList(generics.ListCreateAPIView):
@@ -44,8 +44,11 @@ class OrderDetail(generics.ListAPIView):
     serializer_class = serializers.OrderDetailSerializer
     
     def get_queryset(self):
-        order_id = self.kwargs['pk']
-        order = models.Order.objects.get(id = order_id)
+        try:
+            order_id = self.kwargs['pk']
+            order = models.Order.objects.get(id=order_id)
+        except models.Order.DoesNotExist:
+            raise Http404("Order does not exist")
         order_items = models.OrderItems.objects.filter(order=order)
         return order_items
     

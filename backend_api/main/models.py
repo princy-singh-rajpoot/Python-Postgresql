@@ -44,10 +44,8 @@ class Order(models.Model):
     
 # order items model
 class OrderItems(models.Model): 
-    # order = models.ForeignKey(Order, on_delete=models.CASCADE, related_name='order_items')
-    order = models.ForeignKey(Order, on_delete=models.CASCADE, default=1)  
+    order = models.ForeignKey(Order, on_delete=models.CASCADE, related_name='order_items')
     product = models.ForeignKey(Product, on_delete=models.CASCADE)
-    
     
     def __str__(self):
         return self.product.title
@@ -67,7 +65,7 @@ class ProductRating(models.Model):
     product = models.ForeignKey(Product, on_delete=models.CASCADE, related_name='product_ratings')
     rating = models.IntegerField()
     reviews = models.TextField() 
-    adda_time = models.DateTimeField(auto_now_add=True)
+    add_time = models.DateTimeField(auto_now_add=True)
     
     def __str__(self):
         return f'{self.rating}-{self.reviews}'
