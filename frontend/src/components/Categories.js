@@ -64,7 +64,9 @@ function Categories() {
                 </div>
                 {/* categories box ended 4*/}
 
-                <div className='row mb-2'>
+            </div>
+
+            <div className='row mb-2'>
 
                     {/* categories box 5*/}
                     <div className='col-12 col-md-3 mb-3'>
@@ -123,8 +125,6 @@ function Categories() {
                     {/* categories box ended 5*/}
 
                 </div>
-
-            </div>
             {/* end of popularrr categoriesssssssss */}
        </section>
     )
