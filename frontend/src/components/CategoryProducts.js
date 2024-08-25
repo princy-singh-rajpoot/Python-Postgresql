@@ -40,4 +40,4 @@ function CategoryProducts(){
         </section>
     )
 }
-export default CategoryProducts
+export default CategoryProducts;
