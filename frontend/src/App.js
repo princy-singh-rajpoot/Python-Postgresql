@@ -498,7 +498,6 @@ function App() {
 
           </footer>
 
-
         </div>
       </main>
     </>
