@@ -420,68 +420,60 @@ function App() {
           {/* end of popularrr sellersrrrrrrrrrrr */}
 
           {/* rating and reviews */}
-          <div id="carouselExampleIndicators" className="carousel slide my-4 border bg-dark text-white p-5" data-bs-ride="true">
+          <div id="carouselExampleIndicators" className="carousel slide my-4 border bg-dark text-white p-5" data-bs-ride="carousel">
 
-           <div className="carousel-indicators">
-              <button type="button" data-bs-target="#carouselExampleIndicators" 
-              data-bs-slide-to="0" className="active" 
-              aria-current="true" aria-label="Slide 1">
-              </button>
-
-              <button type="button" data-bs-target="#carouselExampleIndicators" 
-              data-bs-slide-to="1" aria-label="Slide 2">
-              </button>
-
-              <button type="button" data-bs-target="#carouselExampleIndicators" 
-              data-bs-slide-to="2" aria-label="Slide 3">
-              </button>
+            <div className="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
             </div>
 
             <div className="carousel-inner">
 
               <div className="carousel-item active">
-                <figure className="text-center">
-                  <blockquote className="blockquote"><p> A well-known quote, contained in a blackquote  element.</p></blockquote>
-                  <figcaption className="blackquote-footer">
-                    <i className='fa fa-star text-warning'></i> <i className='fa fa-star text-warning'></i> <i className='fa fa-star text-warning'></i>
-                    <cite title="Source Title"> Customer Name </cite>
-                  </figcaption>
-                </figure>
+                  <figure className="text-center">
+                      <blockquote className="blockquote"><p>A well-known quote, contained in a blockquote element.</p></blockquote>
+                      <figcaption className="blockquote-footer">
+                          <i className='fa fa-star text-warning'></i> <i className='fa fa-star text-warning'></i> <i className='fa fa-star text-warning'></i>
+                          <cite title="Source Title">Customer Name</cite>
+                      </figcaption>
+                  </figure>
               </div>
 
               <div className="carousel-item">
-              <figure className="text-center">
-                  <blockquote className="blockquote"><p> A well-known quote, contained in a blackquote  element.</p></blockquote>
-                  <figcaption className="blackquote-footer">
-                  <i className='fa fa-star text-warning'></i><i className='fa fa-star text-warning'></i>
-                    <cite title="Source Title"> Customer Name </cite>
-                  </figcaption>
-                </figure>
+                  <figure className="text-center">
+                      <blockquote className="blockquote"><p>A well-known quote, contained in a blockquote element.</p></blockquote>
+                      <figcaption className="blockquote-footer">
+                          <i className='fa fa-star text-warning'></i><i className='fa fa-star text-warning'></i>
+                          <cite title="Source Title">Customer Name</cite>
+                      </figcaption>
+                  </figure>
               </div>
 
               <div className="carousel-item">
-              <figure className="text-center">
-                  <blockquote className="blockquote"><p> A well-known quote, contained in a blackquote  element.</p></blockquote>
-                  <figcaption className="blackquote-footer">
-                  <i className='fa fa-star text-warning'></i>
-                    <cite title="Source Title"> Customer Name </cite>
-                  </figcaption>
-                </figure>
+                  <figure className="text-center">
+                      <blockquote className="blockquote"><p>A well-known quote, contained in a blockquote element.</p></blockquote>
+                      <figcaption className="blockquote-footer">
+                          <i className='fa fa-star text-warning'></i>
+                          <cite title="Source Title">Customer Name</cite>
+                      </figcaption>
+                  </figure>
               </div>
 
             </div>
 
-              <a className="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <a className="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-bs-slide="prev">
                 <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span className="sr-only">Previous</span>
-              </a>
+                <span className="visually-hidden">Previous</span>
+            </a>
 
-              <a className="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <a className="carousel-control-next" href="#carouselExampleIndicators" role="button" data-bs-slide="next">
                 <span className="carousel-control-next-icon" aria-hidden="true"></span>
-                <span className="sr-only">Next</span>
-              </a>
+                <span className="visually-hidden">Next</span>
+            </a>
 
-          </div>
+        </div>
+
           {/* end of rating and reviews */}
           <footer className="d-flex flex-wrap justify-content-between align-items-center my-4 border-top">
 
