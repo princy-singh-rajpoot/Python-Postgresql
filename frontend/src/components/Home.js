@@ -6,10 +6,8 @@ function Home() {
         <main className='mt-4'> 
             <div className='container'>
                 {/* start latest product */}
-                <div className='d-flex justify-content-between align-items-center mb-4'> 
                 <h3 className='mb-0'>Latest Products</h3>
                 <a href='#' className='float-end btn btn-sm btn-dark'>View All Products <i className="fa-solid fa-arrow-right-long"></i> </a>
-                </div>
                 <div className='row mb-4'>
                 {/* product box 1*/}
                 <div className='col-12 col-md-3 mb-3'>
