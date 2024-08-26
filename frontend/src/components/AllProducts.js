@@ -1,10 +1,10 @@
 import logo from '../logo.svg';
 import SingleProduct from './SingleProduct';
 
-function CategoryProducts(){
+function AllProducts(){
     return (
         <section className='container mt-4'> 
-            <h3 className='mb-4'><span className='text-danger'>Python</span>Products</h3>
+            <h3 className='mb-4'>All Products</h3>
             <div className='row mb-4'>
                 <SingleProduct title="8 project"/>
                 <SingleProduct title="7 project"/>
@@ -39,4 +39,4 @@ function CategoryProducts(){
         </section>
     )
 }
-export default CategoryProducts;
+export default AllProducts;
