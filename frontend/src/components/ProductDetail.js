@@ -1,6 +1,6 @@
 import logo from '../logo.svg';
 import { Link } from 'react-router-dom';
-import SingleProduct from './SingleProduct';
+// Removed SingleProduct import since it was not used.
 
 function ProductDetail() {
     return (
@@ -8,35 +8,31 @@ function ProductDetail() {
             <div className="row">
                 <div className="col-lg-4 col-md-6">
                     <div id="productThumbnailSlider" className="carousel carousel-dark slide" data-bs-ride="carousel">
-                    <ol className="carousel-indicators">
-                        <li data-target="#productThumbnailSlider" data-slide-to="0" className="active"></li>
-                        <li data-target="#productThumbnailSlider" data-slide-to="1"></li>
-                        <li data-target="#productThumbnailSlider" data-slide-to="2"></li>
-                    </ol>
-                    <div className="carousel-inner">
-                        <div className="carousel-item active">
-                            
-                            <img src={logo} className="img-fluid rounded shadow" alt="Product" />
-                            
+                        <ol className="carousel-indicators">
+                            <li data-bs-target="#productThumbnailSlider" data-bs-slide-to="0" className="active"></li>
+                            <li data-bs-target="#productThumbnailSlider" data-bs-slide-to="1"></li>
+                            <li data-bs-target="#productThumbnailSlider" data-bs-slide-to="2"></li>
+                        </ol>
+                        <div className="carousel-inner">
+                            <div className="carousel-item active">
+                                <img src={logo} className="img-fluid rounded shadow" alt="Product Image 1" />
+                            </div>
+                            <div className="carousel-item">
+                                <img src={logo} className="img-fluid rounded shadow" alt="Product Image 2" />
+                            </div>
+                            <div className="carousel-item">
+                                <img src={logo} className="img-fluid rounded shadow" alt="Product Image 3" />
+                            </div>
                         </div>
-                        <div className="carousel-item">
-                            
-                            <img src={logo} className="img-fluid rounded shadow" alt="Product" />
-                            
-                        </div>
-                        <div className="carousel-item">
-                            <img src={logo} className="img-fluid rounded shadow" alt="Product" />
-                        </div> 
+                        <a className="carousel-control-prev" href="#productThumbnailSlider" role="button" data-bs-slide="prev">
+                            <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span className="visually-hidden">Previous</span>
+                        </a>
+                        <a className="carousel-control-next" href="#productThumbnailSlider" role="button" data-bs-slide="next">
+                            <span className="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span className="visually-hidden">Next</span>
+                        </a>
                     </div>
-                </div>
-                <a className="carousel-control-prev" href="#productThumbnailSlider" role="button" data-slide="prev">
-                    <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span className="sr-only">Previous</span>
-                </a>
-                <a className="carousel-control-next" href="#productThumbnailSlider" role="button" data-slide="next">
-                    <span className="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span className="sr-only">Next</span>
-                </a>
                 </div>
                 <div className="col-lg-8 col-md-6">
                     <h2 className="display-6 fw-bold">Product Title</h2>
@@ -76,34 +72,35 @@ function ProductDetail() {
 
             <div id="relatedProductsSlider" className="carousel carousel-dark slide" data-bs-ride="carousel">
                 <ol className="carousel-indicators">
-                    <li data-target="#relatedProductsSlider" data-slide-to="0" className="active"></li>
-                    <li data-target="#relatedProductsSlider" data-slide-to="1"></li>
-                    <li data-target="#relatedProductsSlider" data-slide-to="2"></li>
+                    <li data-bs-target="#relatedProductsSlider" data-bs-slide-to="0" className="active"></li>
+                    <li data-bs-target="#relatedProductsSlider" data-bs-slide-to="1"></li>
+                    <li data-bs-target="#relatedProductsSlider" data-bs-slide-to="2"></li>
                 </ol>
                 <div className="carousel-inner">
                     <div className="carousel-item active">
                         <div className='row mb-4'>
-                        <img src={logo} className="img-fluid rounded shadow" alt="Product" />
+                            <img src={logo} className="img-fluid rounded shadow" alt="Related Product 1" />
                         </div>
                     </div>
                     <div className="carousel-item">
                         <div className='row mb-4'>
-                        <img src={logo} className="img-fluid rounded shadow" alt="Product" />
+                            <img src={logo} className="img-fluid rounded shadow" alt="Related Product 2" />
                         </div>
                     </div>
                     <div className="carousel-item">
                         <div className='row mb-4'>
-                        <img src={logo} className="img-fluid rounded shadow" alt="Product" />
+                            <img src={logo} className="img-fluid rounded shadow" alt="Related Product 3" />
                         </div>
-                    </div> 
+                    </div>
                 </div>
-                {/* <a className="carousel-control-prev" href="#relatedProductsSlider" role="button" data-slide="prev">
+                {/* Uncomment the carousel controls if needed */}
+                {/* <a className="carousel-control-prev" href="#relatedProductsSlider" role="button" data-bs-slide="prev">
                     <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span className="sr-only">Previous</span>
+                    <span className="visually-hidden">Previous</span>
                 </a>
-                <a className="carousel-control-next" href="#relatedProductsSlider" role="button" data-slide="next">
+                <a className="carousel-control-next" href="#relatedProductsSlider" role="button" data-bs-slide="next">
                     <span className="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span className="sr-only">Next</span>
+                    <span className="visually-hidden">Next</span>
                 </a> */}
             </div>
             {/* end of related products */}
@@ -112,3 +109,4 @@ function ProductDetail() {
 }
 
 export default ProductDetail;
+
