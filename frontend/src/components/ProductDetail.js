@@ -1,40 +1,46 @@
 import logo from '../logo.svg';
 import { Link } from 'react-router-dom';
-// Removed SingleProduct import since it was not used.
+import SingleProduct from './SingleProduct';
 
 function ProductDetail() {
     return (
         <section className="container mt-4">
             <div className="row">
-                <div className="col-lg-4 col-md-6">
-                    <div id="productThumbnailSlider" className="carousel carousel-dark slide" data-bs-ride="carousel">
+                <div className="col-4">
+                    <div id="productThumbnailSlider" className="carousel carousel-dark slide carousel-fade" data-bs-ride="true">
                         <ol className="carousel-indicators">
                             <li data-bs-target="#productThumbnailSlider" data-bs-slide-to="0" className="active"></li>
                             <li data-bs-target="#productThumbnailSlider" data-bs-slide-to="1"></li>
                             <li data-bs-target="#productThumbnailSlider" data-bs-slide-to="2"></li>
                         </ol>
+
                         <div className="carousel-inner">
+
                             <div className="carousel-item active">
-                                <img src={logo} className="img-fluid rounded shadow" alt="Product Image 1" />
+                                <img src={logo} className="img-thumbnail mb-5" alt="..."/>
                             </div>
+
                             <div className="carousel-item">
-                                <img src={logo} className="img-fluid rounded shadow" alt="Product Image 2" />
+                                <img src={logo} className="img-thumbnail mb-5" alt="..."/>        
                             </div>
+
                             <div className="carousel-item">
-                                <img src={logo} className="img-fluid rounded shadow" alt="Product Image 3" />
+                                <img src={logo} className="img-thumbnail mb-5" alt="..."/>
                             </div>
+
                         </div>
-                        <a className="carousel-control-prev" href="#productThumbnailSlider" role="button" data-bs-slide="prev">
+                        <button className="carousel-control-prev text-dark" type ="button" data-bs-target="#productThumbnailSlider" data-bs-slide="prev">
                             <span className="carousel-control-prev-icon" aria-hidden="true"></span>
                             <span className="visually-hidden">Previous</span>
-                        </a>
-                        <a className="carousel-control-next" href="#productThumbnailSlider" role="button" data-bs-slide="next">
+                        </button>
+                        <button className="carousel-control-next" type ="button" data-bs-target="#productThumbnailSlider" data-bs-slide="next">
                             <span className="carousel-control-next-icon" aria-hidden="true"></span>
                             <span className="visually-hidden">Next</span>
-                        </a>
+                        </button>
                     </div>
                 </div>
-                <div className="col-lg-8 col-md-6">
+
+                <div className="col-lg-8">
                     <h2 className="display-6 fw-bold">Product Title</h2>
                     <p className="text-muted">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vehicula arcu
@@ -68,41 +74,48 @@ function ProductDetail() {
             </div>
 
             {/* Related Products */}
-            <h3 className='mt-5 mb-3'> Related Products </h3>
-
-            <div id="relatedProductsSlider" className="carousel carousel-dark slide" data-bs-ride="carousel">
-                <ol className="carousel-indicators">
-                    <li data-bs-target="#relatedProductsSlider" data-bs-slide-to="0" className="active"></li>
-                    <li data-bs-target="#relatedProductsSlider" data-bs-slide-to="1"></li>
-                    <li data-bs-target="#relatedProductsSlider" data-bs-slide-to="2"></li>
-                </ol>
-                <div className="carousel-inner">
-                    <div className="carousel-item active">
-                        <div className='row mb-4'>
-                            <img src={logo} className="img-fluid rounded shadow" alt="Related Product 1" />
+                <h3 className='mt-5 mb-3'> Related Products </h3>
+                <div id="relatedProductsSlider" className="carousel carousel-dark slide" data-bs-ride="true">
+                    <ol className="carousel-indicators">
+                        <li data-bs-target="#relatedProductsSlider" data-bs-slide-to="0" className="active"></li>
+                        <li data-bs-target="#relatedProductsSlider" data-bs-slide-to="1"></li>
+                        <li data-bs-target="#relatedProductsSlider" data-bs-slide-to="2"></li>
+                    </ol>
+                    <div className="carousel-inner">
+                        <div className="carousel-item active">
+                            <div className='row mb-5'>
+                                <SingleProduct title="latest product 1" />
+                                <SingleProduct title="latest product 1" />
+                                <SingleProduct title="latest product 1" />
+                                <SingleProduct title="latest product 1" />
+                            </div>
+                        </div>
+                        <div className="carousel-item">
+                        <div className='row mb-5'>
+                                <SingleProduct title="latest product 2" />
+                                <SingleProduct title="latest product 2" />
+                                <SingleProduct title="latest product 2" />
+                                <SingleProduct title="latest product 2" />
+                            </div>
+                        </div>
+                        <div className="carousel-item">
+                        <div className='row mb-5'>
+                                <SingleProduct title="latest product 3" />
+                                <SingleProduct title="latest product 3" />
+                                <SingleProduct title="latest product 3" />
+                                <SingleProduct title="latest product 3" />
+                            </div>
                         </div>
                     </div>
-                    <div className="carousel-item">
-                        <div className='row mb-4'>
-                            <img src={logo} className="img-fluid rounded shadow" alt="Related Product 2" />
-                        </div>
-                    </div>
-                    <div className="carousel-item">
-                        <div className='row mb-4'>
-                            <img src={logo} className="img-fluid rounded shadow" alt="Related Product 3" />
-                        </div>
-                    </div>
+                    {/* <button className="carousel-control-prev text-dark" type ="button" data-bs-target="#relatedProductsSlider" data-bs-slide="prev">
+                        <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span className="visually-hidden">Previous</span>
+                    </button>
+                    <button className="carousel-control-next" type ="button" data-bs-target="#relatedProductsSlider" data-bs-slide="next">
+                        <span className="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span className="visually-hidden">Next</span>
+                    </button> */}
                 </div>
-                {/* Uncomment the carousel controls if needed */}
-                {/* <a className="carousel-control-prev" href="#relatedProductsSlider" role="button" data-bs-slide="prev">
-                    <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span className="visually-hidden">Previous</span>
-                </a>
-                <a className="carousel-control-next" href="#relatedProductsSlider" role="button" data-bs-slide="next">
-                    <span className="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span className="visually-hidden">Next</span>
-                </a> */}
-            </div>
             {/* end of related products */}
         </section>
     );
