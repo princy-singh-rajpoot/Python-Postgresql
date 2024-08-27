@@ -29,6 +29,7 @@ function ProductDetail() {
                             </div>
 
                         </div>
+
                         <button className="carousel-control-prev text-dark" type ="button" data-bs-target="#productThumbnailSlider" data-bs-slide="prev">
                             <span className="carousel-control-prev-icon" aria-hidden="true"></span>
                             <span className="visually-hidden">Previous</span>
@@ -37,6 +38,7 @@ function ProductDetail() {
                             <span className="carousel-control-next-icon" aria-hidden="true"></span>
                             <span className="visually-hidden">Next</span>
                         </button>
+                        
                     </div>
                 </div>
 
