@@ -1,63 +1,42 @@
-// import logo from '../logo.svg';
-// import {Link} from 'react-router-dom';
-
-// function ProductDetail(){
-//     return (
-//         <section className="container mt-4">
-//             <div className="row">
-//                 <div className="col-4">
-//                     <img src={logo} className="imf-thumbnail" alt="..."/>
-//                 </div>
-//                 <div className="col-8">
-//                     <h3> Product Title </h3> 
-//                     <p> Lorem lorem Product Title Lorem lorem Product Title Lorem 
-//                         lorem Product Title Lorem lorem Product Title 
-//                         Lorem lorem Product Title Lorem lorem Product Title 
-//                     </p>
-//                     <h5 className="card-title"> Price : Rs 500/- </h5>
-//                     <p className='mt-3'>
-//                         <button title="Add to cart" className="btn btn-success">
-//                         <i className="fa-solid fa-cart-plus"></i> Add to cart 
-//                         </button>
-//                         <button title="Buy now" className="btn btn-warning ms-1">
-//                         <i className="fa-solid fa-bag-shopping"></i> Buy Now
-//                         </button>
-//                         <button title="Add to wishlist" className="btn btn-danger ms-1">
-//                         <i className="fa fa-heart"></i> Add to Wishlist 
-//                         </button>
-//                     </p>
-//                     <hr></hr>
-//                     <div className='producttags mt-4'>
-//                         <h5> Tags </h5>
-//                         <p>
-//                             <Link to="#" className='badge bg-secondary text-white me-1'> Python </Link>,
-//                             <Link to="#" className='badge bg-secondary text-white me-1'> Django </Link>,
-//                             <Link to="#" className='badge bg-secondary text-white me-1'> JAVASCRIPT </Link>,  
-//                             <Link to="#" className='badge bg-secondary text-white me-1'> Python </Link>,
-//                             <Link to="#" className='badge bg-secondary text-white me-1'> Django </Link>,
-//                             <Link to="#" className='badge bg-secondary text-white me-1'> JAVASCRIPT </Link>,  
-//                             <Link to="#" className='badge bg-secondary text-white me-1'> Python </Link>,
-//                             <Link to="#" className='badge bg-secondary text-white me-1'> Django </Link>,
-//                             <Link to="#" className='badge bg-secondary text-white me-1'> JAVASCRIPT </Link>,  
-//                         </p>
-//                     </div>
-//                 </div>
-//             </div>
-//         </section>
-//     );
-// }
-// export default ProductDetail;
-
-
 import logo from '../logo.svg';
 import { Link } from 'react-router-dom';
+import SingleProduct from './SingleProduct';
 
 function ProductDetail() {
     return (
         <section className="container mt-4">
             <div className="row">
                 <div className="col-lg-4 col-md-6">
-                    <img src={logo} className="img-fluid rounded shadow" alt="Product" />
+                    <div id="productThumbnailSlider" className="carousel carousel-dark slide" data-bs-ride="carousel">
+                    <ol className="carousel-indicators">
+                        <li data-target="#productThumbnailSlider" data-slide-to="0" className="active"></li>
+                        <li data-target="#productThumbnailSlider" data-slide-to="1"></li>
+                        <li data-target="#productThumbnailSlider" data-slide-to="2"></li>
+                    </ol>
+                    <div className="carousel-inner">
+                        <div className="carousel-item active">
+                            
+                            <img src={logo} className="img-fluid rounded shadow" alt="Product" />
+                            
+                        </div>
+                        <div className="carousel-item">
+                            
+                            <img src={logo} className="img-fluid rounded shadow" alt="Product" />
+                            
+                        </div>
+                        <div className="carousel-item">
+                            <img src={logo} className="img-fluid rounded shadow" alt="Product" />
+                        </div> 
+                    </div>
+                </div>
+                <a className="carousel-control-prev" href="#productThumbnailSlider" role="button" data-slide="prev">
+                    <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span className="sr-only">Previous</span>
+                </a>
+                <a className="carousel-control-next" href="#productThumbnailSlider" role="button" data-slide="next">
+                    <span className="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span className="sr-only">Next</span>
+                </a>
                 </div>
                 <div className="col-lg-8 col-md-6">
                     <h2 className="display-6 fw-bold">Product Title</h2>
@@ -91,6 +70,43 @@ function ProductDetail() {
                     </div>
                 </div>
             </div>
+
+            {/* Related Products */}
+            <h3 className='mt-5 mb-3'> Related Products </h3>
+
+            <div id="relatedProductsSlider" className="carousel carousel-dark slide" data-bs-ride="carousel">
+                <ol className="carousel-indicators">
+                    <li data-target="#relatedProductsSlider" data-slide-to="0" className="active"></li>
+                    <li data-target="#relatedProductsSlider" data-slide-to="1"></li>
+                    <li data-target="#relatedProductsSlider" data-slide-to="2"></li>
+                </ol>
+                <div className="carousel-inner">
+                    <div className="carousel-item active">
+                        <div className='row mb-4'>
+                        <img src={logo} className="img-fluid rounded shadow" alt="Product" />
+                        </div>
+                    </div>
+                    <div className="carousel-item">
+                        <div className='row mb-4'>
+                        <img src={logo} className="img-fluid rounded shadow" alt="Product" />
+                        </div>
+                    </div>
+                    <div className="carousel-item">
+                        <div className='row mb-4'>
+                        <img src={logo} className="img-fluid rounded shadow" alt="Product" />
+                        </div>
+                    </div> 
+                </div>
+                {/* <a className="carousel-control-prev" href="#relatedProductsSlider" role="button" data-slide="prev">
+                    <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span className="sr-only">Previous</span>
+                </a>
+                <a className="carousel-control-next" href="#relatedProductsSlider" role="button" data-slide="next">
+                    <span className="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span className="sr-only">Next</span>
+                </a> */}
+            </div>
+            {/* end of related products */}
         </section>
     );
 }
