@@ -54,7 +54,7 @@ function Checkout(props) {
                                 </tr>
                                 <tr>
                                     <th colSpan='3' className='text-end'>
-                                        <Link to="/categories" className='btn btn-secondary'>Continue Shopping</Link>
+                                        <Link to="/categories" className='btn btn-success'>Continue Shopping</Link>
                                         <Link to="#" className='btn btn-primary ms-1'>Proceed to payment</Link>
                                     </th>
                                 </tr>
