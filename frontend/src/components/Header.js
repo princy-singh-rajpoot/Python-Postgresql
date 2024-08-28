@@ -16,9 +16,10 @@ function Header(){
                         </Link>
                     </li>
                     <li className="nav-item">
-                        <Link className="nav-link" to="/categories">
-                            Categories
-                        </Link>
+                        <Link className="nav-link" to="/categories"> Categories </Link>
+                    </li>
+                    <li className="nav-item">
+                        <Link className="nav-link" to="/checkout"> My Cart(4) </Link>
                     </li>
                 </ul>
             </div>
