@@ -4,28 +4,40 @@ import logo from '../../logo.svg';
 
 function Login(props) {
     return (
-        <div className='container mt-4'>
-            
-            <div className='row'>
-                <div className='col-md-8 col-12 offset-2'>
-                    <div className='card'>
-                        <h4 className='card-header'> Login </h4>
-                        <div className='card-body'>
-                            <form>
-
-                                <div className="form-group">
-                                    <label for="username"> Username </label>
-                                    <input type="text" className="form-control" id="username" placeholder="Enter email" />
+        <div className="container mt-5 d-flex justify-content-center align-items-center" style={{ height: '100vh' }}>
+            <div className="col-lg-6 col-md-8 col-12">
+                <div className="card shadow-lg rounded-lg">
+                    <div className="card-header bg-dark text-white text-center py-4">
+                        <img src={logo} alt="logo" className="mb-3" style={{ width: '50px' }} />
+                        <h4>Login</h4>
+                    </div>
+                    <div className="card-body p-5">
+                        <form>
+                            <div className="form-group mb-4">
+                                <label htmlFor="username">Username</label>
+                                <div className="input-group">
+                                    <div className="input-group-prepend">
+                                        <span className="input-group-text bg-dark text-white"><i className="bi bi-person"></i></span>
+                                    </div>
+                                    <input type="text" className="form-control" id="username" placeholder="Enter your username" />
                                 </div>
+                            </div>
 
-                                <div className="form-group">
-                                    <label for="pwd"> Password </label>
-                                    <input type="password" className="form-control" id="pwd" placeholder="Enter email" />
+                            <div className="form-group mb-4">
+                                <label htmlFor="pwd">Password</label>
+                                <div className="input-group">
+                                    <div className="input-group-prepend">
+                                        <span className="input-group-text bg-dark text-white"><i className="bi bi-lock"></i></span>
+                                    </div>
+                                    <input type="password" className="form-control" id="pwd" placeholder="Enter your password" />
                                 </div>
+                            </div>
 
-                                <button type="submit" className="btn btn-primary">Submit</button>
-                            </form>
-                        </div>
+                            <button type="submit" className="btn btn-primary btn-block py-2">Login</button>
+                        </form>
+                    </div>
+                    <div className="card-footer text-center">
+                        <small>Don't have an account? <Link to="/register" className="text-primary">Register here</Link></small>
                     </div>
                 </div>
             </div>
