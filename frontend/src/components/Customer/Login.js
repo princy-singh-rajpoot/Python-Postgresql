@@ -7,10 +7,10 @@ function Login(props) {
         <div className="container mt-5 d-flex justify-content-center align-items-center" style={{ height: '100vh' }}>
             <div className="col-lg-6 col-md-8 col-12">
                 <div className="card shadow-lg rounded-lg">
-                    <div className="card-header bg-dark text-white text-center py-4">
-                        <img src={logo} alt="logo" className="mb-3" style={{ width: '50px' }} />
-                        <h4>Login</h4>
+                    <div className="card-header text-center bg-primary text-white">
+                            <h4>Customer Login</h4>
                     </div>
+                    
                     <div className="card-body p-5">
                         <form>
                             <div className="form-group mb-4">

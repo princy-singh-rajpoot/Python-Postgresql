@@ -55,9 +55,8 @@ function Register(props) {
                                     </div>
                                 </div>
 
-                                <div className="card-header text-center bg-primary text-white">
-                                    <h4>Submit</h4>
-                                </div>
+                                <button type="submit" className="btn btn-primary btn-block py-2">Submit</button>
+
                         </form>
                         </div>
                         <div className="card-footer text-center">
