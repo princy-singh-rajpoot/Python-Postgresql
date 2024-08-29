@@ -9,7 +9,6 @@ function Register(props) {
                 <div className="col-lg-6 col-md-8 col-12">
                     <div className="card shadow-lg">
                         <div className="card-header text-center bg-primary text-white">
-                            {/* <img src={logo} alt="logo" className="mb-2" style={{ width: '50px' }} /> */}
                             <h4>Register</h4>
                         </div>
                         <div className="card-body p-4">
@@ -60,7 +59,7 @@ function Register(props) {
                         </form>
                         </div>
                         <div className="card-footer text-center">
-                            <small>Already have an account? <Link to="/login" className="text-primary">Sign in</Link></small>
+                            <small>Already have an account? <Link to="/customer/login" className="text-primary">Login</Link></small>
                         </div>
                     </div>
                 </div>
