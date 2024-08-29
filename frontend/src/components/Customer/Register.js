@@ -55,25 +55,10 @@ function Register(props) {
                                     </div>
                                 </div>
 
-                                <button 
-                                    type="submit" 
-                                    className="btn btn-block py-3 text-white" 
-                                    style={{
-                                        background: 'linear-gradient(90deg, #ff6a00, #ee0979)',
-                                        border: 'none',
-                                        borderRadius: '30px',
-                                        fontSize: '18px',
-                                        fontWeight: 'bold',
-                                        transition: 'transform 0.2s, box-shadow 0.2s',
-                                        boxShadow: '0px 4px 15px rgba(0, 0, 0, 0.2)'
-                                    }}
-                                    onMouseEnter={(e) => e.target.style.transform = 'scale(1.05)'}
-                                    onMouseLeave={(e) => e.target.style.transform = 'scale(1)'}>
-                                    Create Account
-                                </button>
-
-                                {/* <button type="submit" className="btn btn-gradient-primary btn-block">Create Account</button> */}
-                            </form>
+                                <div className="card-header text-center bg-primary text-white">
+                                    <h4>Submit</h4>
+                                </div>
+                        </form>
                         </div>
                         <div className="card-footer text-center">
                             <small>Already have an account? <Link to="/login" className="text-primary">Sign in</Link></small>
