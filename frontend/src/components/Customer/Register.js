@@ -4,42 +4,72 @@ import logo from '../../logo.svg';
 
 function Register(props) {
     return (
-        <div className='container mt-4'>
-            
-            <div className='row'>
-                <div className='col-md-8 col-12 offset-2'>
-                    <div className='card'>
-                        <h4 className='card-header'> Register </h4>
-                        <div className='card-body'>
+        <div className="container mt-5">
+            <div className="row justify-content-center">
+                <div className="col-lg-6 col-md-8 col-12">
+                    <div className="card shadow-lg">
+                        <div className="card-header text-center bg-primary text-white">
+                            <img src={logo} alt="logo" className="mb-2" style={{ width: '50px' }} />
+                            <h4>Register</h4>
+                        </div>
+                        <div className="card-body p-4">
                             <form>
 
-                                <div className="form-group">
-                                    <label for="firstName"> First name </label>
-                                    <input type="text" className="form-control" id="firstName" placeholder="Enter email" />
+                                <div className="form-group mb-3">
+                                    <label htmlFor="firstName">First Name</label>
+                                    <div className="input-group">
+                                        <div className="input-group-prepend">
+                                            <span className="input-group-text bg-primary text-white"><i className="bi bi-person"></i></span>
+                                        </div>
+                                        <input type="text" className="form-control" id="firstName" placeholder="Enter your first name" />
+                                    </div>
                                 </div>
 
-                                <div className="form-group">
-                                    <label for="lastName"> Last name </label>
-                                    <input type="text" className="form-control" id="lastName" placeholder="Enter email" />
+                                <div className="form-group mb-3">
+                                    <label htmlFor="lastName">Last Name</label>
+                                    <div className="input-group">
+                                        <div className="input-group-prepend">
+                                            <span className="input-group-text bg-primary text-white"><i className="bi bi-person"></i></span>
+                                        </div>
+                                        <input type="text" className="form-control" id="lastName" placeholder="Enter your last name" />
+                                    </div>
                                 </div>
 
-                                <div className="form-group">
-                                    <label for="username"> Username </label>
-                                    <input type="text" className="form-control" id="username" placeholder="Enter email" />
+                                <div className="form-group mb-3">
+                                    <label htmlFor="username">Username</label>
+                                    <div className="input-group">
+                                        <div className="input-group-prepend">
+                                            <span className="input-group-text bg-primary text-white"><i className="bi bi-person-circle"></i></span>
+                                        </div>
+                                        <input type="text" className="form-control" id="username" placeholder="Enter a username" />
+                                    </div>
                                 </div>
 
-                                <div className="form-group">
-                                    <label for="email"> Email </label>
-                                    <input type="email" className="form-control" id="email" placeholder="Enter email" />
+                                <div className="form-group mb-3">
+                                    <label htmlFor="email">Email</label>
+                                    <div className="input-group">
+                                        <div className="input-group-prepend">
+                                            <span className="input-group-text bg-primary text-white"><i className="bi bi-envelope"></i></span>
+                                        </div>
+                                        <input type="email" className="form-control" id="email" placeholder="Enter your email" />
+                                    </div>
                                 </div>
 
-                                <div className="form-group">
-                                    <label for="pwd"> Password </label>
-                                    <input type="password" className="form-control" id="pwd" placeholder="Enter email" />
+                                <div className="form-group mb-4">
+                                    <label htmlFor="pwd">Password</label>
+                                    <div className="input-group">
+                                        <div className="input-group-prepend">
+                                            <span className="input-group-text bg-primary text-white"><i className="bi bi-lock"></i></span>
+                                        </div>
+                                        <input type="password" className="form-control" id="pwd" placeholder="Enter a password" />
+                                    </div>
                                 </div>
 
-                                <button type="submit" className="btn btn-primary">Submit</button>
+                                <button type="submit" className="btn btn-gradient-primary btn-block">Create Account</button>
                             </form>
+                        </div>
+                        <div className="card-footer text-center">
+                            <small>Already have an account? <Link to="/login" className="text-primary">Sign in</Link></small>
                         </div>
                     </div>
                 </div>
