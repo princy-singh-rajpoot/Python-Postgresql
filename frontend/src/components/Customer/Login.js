@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-// assets
+// asset
 import logo from '../../logo.svg';
 
 function Login(props) {
@@ -17,9 +17,9 @@ function Login(props) {
                                 <div className="form-group mb-4">
                                     <label htmlFor="username">Username</label>
                                     <div className="input-group">
-                                        <div className="input-group-prepend">
-                                        <span className="input-group-text bg-dark text-white"><i className="bi bi-person"></i></span>
-                                        </div>
+                                        {/* <div className="input-group-prepend"> */}
+                                        {/* <span className="input-group-text bg-dark text-white"><i className="bi bi-person"></i></span> */}
+                                        {/* </div> */}
                                         <input type="text" className="form-control" id="username" placeholder="Enter your username" />
                                     </div>
                                 </div>
@@ -27,9 +27,9 @@ function Login(props) {
                                 <div className="form-group mb-4">
                                     <label htmlFor="pwd">Password</label>
                                     <div className="input-group">
-                                        <div className="input-group-prepend">
+                                        {/* <div className="input-group-prepend">
                                             <span className="input-group-text bg-dark text-white"><i className="bi bi-lock"></i></span>
-                                        </div>
+                                        </div> */}
                                         <input type="password" className="form-control" id="pwd" placeholder="Enter your password" />
                                     </div>
                                 </div>
