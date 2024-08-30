@@ -21,6 +21,7 @@ import Register from './components/Customer/Register';
 import Login from './components/Customer/Login';
 import Dashboard from './components/Customer/Dashboard';
 import Orders from './components/Customer/Orders';
+import Wishlist from './components/Customer/Wishlist';
 
 function App() {
   return (
@@ -39,6 +40,7 @@ function App() {
           <Route path='/customer/login' element={<Login/>} />
           <Route path='/customer/dashboard' element={<Dashboard/>} />
           <Route path='/customer/orders' element={<Orders/>} />
+          <Route path='/customer/wishlist' element={<Wishlist/>} />
         </Routes>
       <Footer/>
     </>
