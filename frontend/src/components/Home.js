@@ -129,8 +129,8 @@ function Home() {
                         <img src={logo} className="card-img-top" alt="..."/>
 
                         <div className="card-body">
-                        <h4 className="card-title">Product title</h4>
-                        <h5 className="card-title text-muted">Price: Rs. 500</h5>
+                            <h4 className="card-title">Product title</h4>
+                            <h5 className="card-title text-muted">Price: Rs. 500</h5>
                         </div>
 
                         <div className='card-footer'>
