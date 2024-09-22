@@ -1,4 +1,3 @@
-import logo from '../logo.svg';
 import SingleProduct from './SingleProduct';
 
 function AllProducts(){

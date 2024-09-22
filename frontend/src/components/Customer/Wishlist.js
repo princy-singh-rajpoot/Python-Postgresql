@@ -25,7 +25,7 @@ function Wishlist() {
                                             <th>#</th>
                                             <th>Product</th>
                                             <th>Price</th>
-                                            <th>Status</th>
+                                            {/* <th>Status</th> */}
                                             <th>Action</th>
                                         </tr>
                                     </thead>
@@ -39,8 +39,7 @@ function Wishlist() {
                                                 </Link>
                                             </td>
                                             <td>Rs. 500</td>
-                                            <td><span className='badge bg-success'><i className='fa fa-check-circle'></i> Completed</span></td>
-                                            <td><button className='btn btn-primary btn-sm'><i className='fa fa-eye'></i> View</button></td>
+                                            <td><button className='btn btn-danger btn-sm'> Remove </button></td>
                                         </tr>
                                         <tr>
                                             <td>2</td>
@@ -51,9 +50,8 @@ function Wishlist() {
                                                 </Link>
                                             </td>
                                             <td>Rs. 500</td>
-                                            <td><span className='badge bg-success'><i className='fa fa-check-circle'></i> Completed</span></td>
-                                            <td><button className='btn btn-primary btn-sm'><i className='fa fa-eye'></i> View</button></td>
-                                        </tr>
+                                                <td><button className='btn btn-danger btn-sm'> Remove </button></td>
+                                           </tr>
                                         <tr>
                                             <td>3</td>
                                             <td>
@@ -63,8 +61,7 @@ function Wishlist() {
                                                 </Link>
                                             </td>
                                             <td>Rs. 500</td>
-                                            <td><span className='badge bg-warning text-dark'><i className='fa fa-spinner fa-spin'></i> Processing</span></td>
-                                            <td><button className='btn btn-secondary btn-sm' disabled><i className='fa fa-download'></i> Download</button></td>
+                                                <td><button className='btn btn-danger btn-sm'> Remove </button></td>    
                                         </tr>
                                         <tr>
                                             <td>4</td>
@@ -75,8 +72,7 @@ function Wishlist() {
                                                 </Link>
                                             </td>
                                             <td>Rs. 500</td>
-                                            <td><span className='badge bg-danger'><i className='fa fa-times-circle'></i> Cancelled</span></td>
-                                            <td><button className='btn btn-outline-danger btn-sm'><i className='fa fa-trash'></i> Remove</button></td>
+                                                <td><button className='btn btn-danger btn-sm'> Remove </button></td>
                                         </tr>
                                     </tbody>
                                 </table>

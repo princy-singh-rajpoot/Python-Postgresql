@@ -1,6 +1,4 @@
 import { Link } from 'react-router-dom';
-// asset
-import logo from '../../logo.svg';
 
 function Login(props) {
     return (

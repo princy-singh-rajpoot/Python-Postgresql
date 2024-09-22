@@ -1,10 +1,16 @@
-import { Link } from 'react-router-dom';
+import Sidebar from './Sidebar';
 
-function UpdateProfile(props) {
+function Profile(props) {
     return (
-        <div className="container mt-5">
-            <div className="row justify-content-center">
-                <div className="col-lg-6 col-md-8 col-12">
+        <div className="container mt-4">
+            <div className="row">
+
+                <div className='col-md-3 col-12 mb-2'>
+                    <Sidebar />
+                </div>
+                
+                {/* Profile form on the right side */}
+                <div className="col-lg-9 col-md-9 col-12">
                     <div className="card shadow-lg">
                         <div className="card-header bg-primary text-white">
                             <h4 className="text-left">Update Profile</h4>
@@ -51,9 +57,7 @@ function UpdateProfile(props) {
 
                             </form>
                         </div>
-                        <div className="card-footer text-center">
-                            <small><Link to="/profile" className="text-primary">Back to Profile</Link></small>
-                        </div>
+                       
                     </div>
                 </div>
             </div>
@@ -61,4 +65,4 @@ function UpdateProfile(props) {
     );
 }
 
-export default UpdateProfile;
+export default Profile;
