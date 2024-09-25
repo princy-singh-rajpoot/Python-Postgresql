@@ -1,4 +1,4 @@
-import Sidebar from './Sidebar';
+import SellerSidebar from './SellerSidebar';
 
 function Profile(props) {
     return (
@@ -6,7 +6,7 @@ function Profile(props) {
             <div className="row">
 
                 <div className='col-md-3 col-12 mb-2'>
-                    <Sidebar />
+                    <SellerSidebar />
                 </div>
                 
                 {/* Profile form on the right side */}

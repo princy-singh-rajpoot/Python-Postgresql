@@ -27,6 +27,18 @@ import ChangePassword from './components/Customer/ChangePassword';
 import AddressList from './components/Customer/AddressList';
 import AddAddress from './components/Customer/AddAddress';
 
+//seller panel
+import SellerRegister from './components/Seller/SellerRegister';
+import SellerLogin from './components/Seller/SellerLogin';
+import SellerDashboard from './components/Seller/SellerDashboard';
+import SellerProducts from './components/Seller/SellerProducts';
+import AddProduct from './components/Seller/AddProduct';
+import VendorOrders from './components/Seller/VendorOrders';
+import Customers from './components/Seller/Customers';
+import Reports from './components/Seller/Reports';
+import VendorProfile from './components/Seller/VendorProfile';
+import VendorChangePassword from './components/Seller/VendorChangePassword';
+
 function App() {
   return (
     <>
@@ -40,6 +52,7 @@ function App() {
           <Route path='/checkout' element={<Checkout/>} />
           <Route path='/order/success' element={<OrderSuccess/>} />
           <Route path='/order/failure' element={<OrderFailure/>} />
+          {/* customer routes */}
           <Route path='/customer/register' element={<Register/>} />
           <Route path='/customer/login' element={<Login/>} />
           <Route path='/customer/dashboard' element={<Dashboard/>} />
@@ -49,6 +62,17 @@ function App() {
           <Route path='/customer/change-password' element={<ChangePassword/>} />
           <Route path='/customer/addresses' element={<AddressList/>} />
           <Route path='/customer/add-address' element={<AddAddress/>} />
+          {/* seller routes */}
+          <Route path='/seller/register' element={<SellerRegister/>} />
+          <Route path='/seller/login' element={<SellerLogin/>} />
+          <Route path='/seller/dashboard' element={<SellerDashboard/>} />
+          <Route path='/seller/products' element={<SellerProducts/>} />
+          <Route path='/seller/add-products' element={<AddProduct/>} />
+          <Route path='/seller/orders' element={<VendorOrders/>} />
+          <Route path='/seller/customers' element={<Customers/>} />
+          <Route path='/seller/reports' element={<Reports/>} />
+          <Route path='/seller/profile' element={<VendorProfile/>} />
+          <Route path='/seller/change-password' element={<VendorChangePassword/>} />
         </Routes>
       <Footer/>
     </>

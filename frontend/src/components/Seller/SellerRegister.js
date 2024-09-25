@@ -1,21 +1,15 @@
-import Sidebar from './Sidebar';
+import { Link } from 'react-router-dom';
 
-function Profile(props) {
+function UpdateProfile(props) {
     return (
-        <div className="container mt-4">
-            <div className="row">
-
-                <div className='col-md-3 col-12 mb-2'>
-                    <Sidebar />
-                </div>
-                
-                {/* Profile form on the right side */}
-                <div className='col-lg-9 col-12 mb-2'>
-                    <div className='card shadow-sm'>
-                        <div className='card-header bg-primary text-white'>
-                            <h5 className='mb-0'>Update Profile</h5>
+        <div className="container mt-5">
+            <div className="row justify-content-center">
+                <div className="col-lg-6 col-md-8 col-12">
+                    <div className="card shadow-lg">
+                        <div className="card-header bg-warning text-white">
+                            <h4 className="text-left">Seller Register</h4>
                         </div>
-                        <div className='card-body'>
+                        <div className="card-body p-4">
                             <form>
 
                                 <div className="form-group mb-3">
@@ -53,11 +47,13 @@ function Profile(props) {
                                     </div>
                                 </div>
 
-                                <button type="submit" className="btn btn-primary btn-block py-2">Update</button>
+                                <button type="submit" className="btn btn-warning btn-block py-2">Submit</button>
 
                             </form>
                         </div>
-                    
+                        <div className="card-footer text-center">
+                            <small><Link to="/profile" className="text-warning">Back to Profile</Link></small>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -65,4 +61,4 @@ function Profile(props) {
     );
 }
 
-export default Profile;
+export default UpdateProfile;

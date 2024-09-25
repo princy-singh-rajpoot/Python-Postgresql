@@ -1,13 +1,13 @@
 import { Link } from 'react-router-dom';
-import Sidebar from './Sidebar';
+import SellerSidebar from './SellerSidebar';
 
-function ChangePassword(props) {
+function VendorChangePassword(props) {
     return (
         <div className="container mt-4">
             <div className="row">
 
                 <div className='col-md-3 col-12 mb-2'>
-                    <Sidebar />
+                    <SellerSidebar />
                 </div>
 
                 <div className='col-lg-9 col-12 mb-2'>
@@ -46,4 +46,4 @@ function ChangePassword(props) {
     );
 }
 
-export default ChangePassword;
+export default VendorChangePassword;

@@ -25,7 +25,6 @@ function Wishlist() {
                                             <th>#</th>
                                             <th>Product</th>
                                             <th>Price</th>
-                                            {/* <th>Status</th> */}
                                             <th>Action</th>
                                         </tr>
                                     </thead>

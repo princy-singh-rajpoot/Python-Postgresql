@@ -1,18 +1,24 @@
 import SingleProduct from './SingleProduct';
 
-function AllProducts(){
+function AllProducts(){ 
+    const products=[
+        {
+            'title':'Python','price':'100'
+        },
+        {
+            'title':'Django','price':'150'
+        },
+        {
+            'title':'Flask','price':'200'
+        },
+    ]
     return (
         <section className='container mt-4'> 
             <h3 className='mb-4'>All Products</h3>
             <div className='row mb-4'>
-                <SingleProduct title="8 project"/>
-                <SingleProduct title="7 project"/>
-                <SingleProduct title="6 project"/>
-                <SingleProduct title="5 project"/>
-                <SingleProduct title="4 project"/>
-                <SingleProduct title="1 project"/>
-                <SingleProduct title="2 project"/>
-                <SingleProduct title="3 project"/>
+                {
+                    products.map((product)=> <SingleProduct product={product} />)
+                }                
             </div>
 
             <nav aria-label="Page navigation example">

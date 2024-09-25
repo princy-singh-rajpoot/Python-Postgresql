@@ -13,9 +13,9 @@ function SingleProduct(props){
                 </Link>
                 <div className="card-body">
                     <h4 className="card-title">
-                        <Link to="/product/python-timer/123">{props.title}</Link>
+                        <Link to="/product/python-timer/123">{props.product.title}</Link>
                     </h4>
-                    <h5 className="card-title text-muted">Price: Rs. 500</h5>
+                    <h5 className="card-title text-muted">Price: Rs. {props.product.price}</h5>
                 </div>
             
                 <div className='card-footer'>

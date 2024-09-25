@@ -20,8 +20,8 @@ function AddAddress(props) {
 
                                 <div className="form-group mb-3">
                                     <label htmlFor="address">Address</label>
-                                    <div className="input-group">
-                                        <input type="text" className="form-control" id="address" placeholder="Enter your Address" />
+                                    <div className="input-group"><br/>
+                                        <input type="text" className="form-control" id="address" placeholder="Enter your Address"/>
                                     </div>
                                 </div>
 
